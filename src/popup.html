@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popup</title>
+</head>
+<body>
+  <h1>OpenPGP Chrome Extension</h1>
+  <button id="myButton">Click Me</button>
+  <button id="generateKeys">Generate Keys</button>
+  <button id="encryptMessage">Encrypt Message</button>
+  <button id="signMessage">Sign Message</button>
+  <button id="decryptMessage">Decrypt Message</button>
+  <button id="verifySignature">Verify Signature</button>
+  <textarea id="publicKey" placeholder="Public Key"></textarea>
+  <textarea id="privateKey" placeholder="Private Key"></textarea>
+  <textarea id="message" placeholder="Message"></textarea>
+  <textarea id="encryptedMessage" placeholder="Encrypted Message"></textarea>
+  <textarea id="signedMessage" placeholder="Signed Message"></textarea>
+  <script src="../node_modules/openpgp/dist/openpgp.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
+<!--     
+      
+ -->

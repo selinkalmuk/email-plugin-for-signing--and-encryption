@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension",
+    "version": "1.0.0",
+    "description": "Chrome Extension for OpenPGP",
+    "icons": {
+      "16": "icons/email-plugin.png",
+      "32": "icons/email-plugin.png",
+      "48": "icons/email-plugin.png",
+      "128": "icons/email-plugin.png"
+    },
+    "background": {
+      "service_worker": "dist/background.bundle.js"
+    },
+    "action": {
+      "default_title": "Chrome Extension",
+      "default_popup": "src/popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "run_at": "document_idle",
+        "js": [
+          "dist/content.bundle.js"
+        ]
+      }
+    ]
+   
+  }
+  
+
+  
